@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 25px;
+}
+
+.header{
+    height: 90vh;
+    background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+}
+
+.logo-box{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+
+.logo{
+    height: 4vw;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 6vw;
+    font-weight: 500;
+    letter-spacing: 2vw;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 0.4vw;
+}
+
+@media only screen and (max-width: 750px) {
+    .logo{
+        height: 8vw;
+    }
+
+    .heading-primary-main{
+        display: block;
+        font-size: 10vw;
+        font-weight: 500;
+        letter-spacing: 5vw;
+    }
+
+    .heading-primary-sub{
+        display: block;
+        font-size: 3.5vw;
+        font-weight: 500;
+        letter-spacing: 1vw;
+    }
+  }

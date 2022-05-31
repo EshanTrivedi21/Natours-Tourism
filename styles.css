@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 1.6rem;
     color: #777;
-    padding: 2%;
+    padding: 1%;
+    line-height: 1.7;
 }
 
 .header{
@@ -22,22 +26,22 @@ body{
     position: relative;
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute;
     top: 3%;
     left: 2%;
 }
 
-.logo{
+.header__logo{
     height: 4vw;
 }
 
-.logo:hover{
+.header__logo:hover{
     transform: scale(1.05);
     transition-duration: 0.5s;
 }
 
-.text-box{
+.header__text-box{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -51,7 +55,7 @@ body{
     margin-bottom: 20%;
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display: block;
     font-size: 6vw;
     font-weight: 500;
@@ -63,12 +67,12 @@ body{
     margin-left: 2%;
 }
 
-.heading-primary-main:hover{
+.heading-primary--main:hover{
     transform: scale(1.01);
     transition-duration: 0.5s;
 }
 
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
     font-size: 2vw;
     font-weight: 500;
@@ -112,33 +116,33 @@ body{
     text-decoration: none;
     padding: 2% 10%;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all 0.2s;
 }
 
-.btn-white{
+.btn--white{
     background-color: #ffffff;
-    color: #777;
+    color: rgb(50, 50, 50);
 }
 
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.35);
 }
 
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.45);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.45);
 }
 
 @media only screen and (max-width: 1250px) {
-    .logo-box{
+    .header__logo-box{
         position: absolute;
         top: 3%;
         left: 3%;
     }
 
-    .logo{
+    .header__logo{
         height: 5vw;
     }
 
@@ -148,7 +152,7 @@ body{
         margin-bottom: 20%;
     }
 
-    .heading-primary-main{
+    .heading-primary--main{
         display: block;
         font-size: 7.5vw;
         font-weight: 500;
@@ -156,7 +160,7 @@ body{
         margin-left: 1.5%;
     }
 
-    .heading-primary-sub{
+    .heading-primary--sub{
         display: block;
         font-size: 2vw;
         font-weight: 500;
@@ -174,13 +178,17 @@ body{
   }
 
 @media only screen and (max-width: 750px) {
-    .logo-box{
+    body{
+        padding: 2%;
+    }
+
+    .header__logo-box{
         position: absolute;
         top: 3%;
         left: 4%;
     }
 
-    .logo{
+    .header__logo{
         height: 8vw;
     }
 
@@ -190,7 +198,7 @@ body{
         margin-bottom: 30%;
     }
 
-    .heading-primary-main{
+    .heading-primary--main{
         display: block;
         font-size: 10vw;
         font-weight: 500;
@@ -198,7 +206,7 @@ body{
         margin-left: 3%;
     }
 
-    .heading-primary-sub{
+    .heading-primary--sub{
         display: block;
         font-size: 3.5vw;
         font-weight: 500;

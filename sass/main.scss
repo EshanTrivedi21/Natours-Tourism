@@ -1,0 +1,229 @@
+$color-primary-light:#ff8c00d0;
+$color-primary-dark:#ff0000d0;
+$color-primary-gray:#777;
+$color-primary-white:#ffffff;
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $color-primary-gray;
+    padding: 1%;
+    line-height: 1.7;
+}
+
+.header{
+    height: 90vh;
+    background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light), url(images/bgmain.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+}
+
+.header__logo-box{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+
+.header__logo{
+    height: 4vw;
+}
+
+.header__logo:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.header__text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary{
+    color: $color-primary-white;
+    text-transform: uppercase;
+    margin-bottom: 20%;
+}
+
+.heading-primary--main{
+    display: block;
+    font-size: 6vw;
+    font-weight: 500;
+    letter-spacing: 2vw;
+    animation-name: moveinleft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    backface-visibility: hidden;
+    margin-left: 2%;
+}
+
+.heading-primary--main:hover{
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+.heading-primary--sub{
+    display: block;
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 0.4vw;
+    animation-name: moveinright;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    backface-visibility: hidden;
+}
+
+@keyframes moveinleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveinright {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2% 10%;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+}
+
+.btn--white{
+    background-color: $color-primary-white;
+    color: rgb(50, 50, 50);
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.35);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.45);
+}
+
+@media only screen and (max-width: 1250px) {
+    .header__logo-box{
+        position: absolute;
+        top: 3%;
+        left: 3%;
+    }
+
+    .header__logo{
+        height: 5vw;
+    }
+
+    .heading-primary{
+        color: $color-primary-white;
+        text-transform: uppercase;
+        margin-bottom: 20%;
+    }
+
+    .heading-primary--main{
+        display: block;
+        font-size: 7.5vw;
+        font-weight: 500;
+        letter-spacing: 2.5vw;
+        margin-left: 1.5%;
+    }
+
+    .heading-primary--sub{
+        display: block;
+        font-size: 2vw;
+        font-weight: 500;
+        letter-spacing: 0.8vw;
+    }
+
+    .header{
+        height: 80vh;
+        background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+        position: relative;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    body{
+        padding: 2%;
+    }
+
+    .header__logo-box{
+        position: absolute;
+        top: 3%;
+        left: 4%;
+    }
+
+    .header__logo{
+        height: 8vw;
+    }
+
+    .heading-primary{
+        color: $color-primary-white;
+        text-transform: uppercase;
+        margin-bottom: 30%;
+    }
+
+    .heading-primary--main{
+        display: block;
+        font-size: 10vw;
+        font-weight: 500;
+        letter-spacing: 4.5vw;
+        margin-left: 3%;
+    }
+
+    .heading-primary--sub{
+        display: block;
+        font-size: 3.5vw;
+        font-weight: 500;
+        letter-spacing: 0.85vw;
+    }
+
+    .header{
+        height: 80vh;
+        background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+        position: relative;
+    }
+  }

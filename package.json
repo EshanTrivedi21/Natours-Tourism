@@ -1,0 +1,22 @@
+{
+  "name": "natours_tourism",
+  "version": "1.0.0",
+  "description": "\"Basic CSS Practise\"",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EshanTrivedi21/NatoursTourism.git"
+  },
+  "author": "Eshan Kalp Trivedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EshanTrivedi21/NatoursTourism/issues"
+  },
+  "homepage": "https://github.com/EshanTrivedi21/NatoursTourism#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

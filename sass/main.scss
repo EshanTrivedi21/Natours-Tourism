@@ -1,148 +1,17 @@
-$color-primary-light:#ff8c00d0;
-$color-primary-dark:#ff0000d0;
-$color-primary-gray:#777;
-$color-primary-white:#ffffff;
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-html{
-    font-size: 62.5%;
-}
+@import "components/button";
 
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    color: $color-primary-gray;
-    padding: 1%;
-    line-height: 1.7;
-}
+@import "layouts/header";
 
-.header{
-    height: 90vh;
-    background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light), url(images/bgmain.jpg);
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    position: relative;
-
-    &__logo-box{
-        position: absolute;
-        top: 3%;
-        left: 2%;
-    }
-
-    &__logo{
-        height: 4vw;
-
-        &:hover{
-            transform: scale(1.05);
-            transition-duration: 0.5s;
-        }
-    }
-    
-    &__text-box{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-}
-
-.heading-primary{
-    color: $color-primary-white;
-    text-transform: uppercase;
-    margin-bottom: 20%;
-
-    &--main{
-        display: block;
-        font-size: 6vw;
-        font-weight: 500;
-        letter-spacing: 2vw;
-        animation-name: moveinleft;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-out;
-        backface-visibility: hidden;
-        margin-left: 2%;
-
-        &:hover{
-            transform: scale(1.01);
-            transition-duration: 0.5s;
-        }
-    }
-
-    &--sub{
-        display: block;
-        font-size: 2vw;
-        font-weight: 500;
-        letter-spacing: 0.4vw;
-        animation-name: moveinright;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-out;
-        backface-visibility: hidden;
-    }
-}
-
-@keyframes moveinleft {
-    0%{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    75%{
-        transform: translateX(10px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveinright {
-    0%{
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    75%{
-        transform: translateX(-10px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.btn{
-    &:link, &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 2% 10%;
-        display: inline-block;
-        border-radius: 10rem;
-        transition: all 0.2s;
-    }
-    
-    &--white{
-        background-color: $color-primary-white;
-        color: rgb(50, 50, 50);
-    }
-    
-    &:hover{
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba(0,0,0,0.35);
-    }
-    
-    &:active{
-        transform: translateY(-1px);
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.45);
-    }
-    
-}
-
+@import "pages/home";
 
 @media only screen and (max-width: 1050px) {
     .header{

@@ -1,0 +1,40 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+.heading-primary{
+    color: $color-primary-white;
+    text-transform: uppercase;
+    margin-bottom: 20%;
+
+    &--main{
+        display: block;
+        font-size: 6vw;
+        font-weight: 500;
+        letter-spacing: 2vw;
+        animation-name: moveinleft;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        backface-visibility: hidden;
+        margin-left: 2%;
+
+        &:hover{
+            transform: scale(1.01);
+            transition-duration: 0.5s;
+        }
+    }
+
+    &--sub{
+        display: block;
+        font-size: 2vw;
+        font-weight: 500;
+        letter-spacing: 0.4vw;
+        animation-name: moveinright;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        backface-visibility: hidden;
+    }
+}

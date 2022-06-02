@@ -1,0 +1,31 @@
+.header{
+    height: 90vh;
+    background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light), url(images/bgmain.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+
+    &__logo-box{
+        position: absolute;
+        top: 3%;
+        left: 2%;
+    }
+
+    &__logo{
+        height: 4vw;
+
+        &:hover{
+            transform: scale(1.05);
+            transition-duration: 0.5s;
+        }
+    }
+    
+    &__text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

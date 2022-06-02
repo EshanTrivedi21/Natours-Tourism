@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EshanTrivedi21/NatoursTourism.git"
+    "url": "git+https://github.com/EshanTrivedi21/Natours-Tourism.git"
   },
   "author": "Eshan Kalp Trivedi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EshanTrivedi21/NatoursTourism/issues"
+    "url": "https://github.com/EshanTrivedi21/Natours-Tourism/issues"
   },
-  "homepage": "https://github.com/EshanTrivedi21/NatoursTourism#readme",
+  "homepage": "https://github.com/EshanTrivedi21/Natours-Tourism#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
   }

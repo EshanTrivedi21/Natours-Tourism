@@ -52,8 +52,8 @@ body {
     backface-visibility: hidden;
     margin-left: 2%; }
     .heading-primary--main:hover {
-      transform: scale(1.01);
-      transition-duration: 0.5s; }
+      transform: translateY(-10px);
+      transition-duration: 0.75s; }
   .heading-primary--sub {
     display: block;
     font-size: 2vw;
@@ -63,6 +63,24 @@ body {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     backface-visibility: hidden; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition-duration: 0.5s; }
+  .heading-secondary:hover {
+    transform: translateY(-10px);
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
+
+.u-center-text {
+  text-align: center; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -107,35 +125,10 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.row {
-  max-width: 115rem;
-  color: #000;
-  margin: 0 auto; }
-  .row:first-child {
-    margin-top: 8rem; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    background-color: orangered;
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 5rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - 5rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 5rem) / 3); }
-  .row .col-2-of-3 {
-    width: calc(2*((100% - 2 *5rem) / 3) + 5rem); }
-  .row .col-2-of-4 {
-    width: calc(2*((100% - 3 * 5rem) / 4) + 5rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 5rem) / 4); }
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 5rem) / 4) + 2 * 5rem); }
+.section-about {
+  background-color: #f7f7f7;
+  padding: 15rem 0;
+  margin-top: -10vh; }
 
 @media only screen and (max-width: 1050px) {
   .header {
@@ -153,9 +146,11 @@ body {
     letter-spacing: 2.5vw;
     margin-left: 1.5%; }
   .heading-primary--sub {
-    letter-spacing: 0.8vw; } }
+    letter-spacing: 0.8vw; }
+  .heading-secondary {
+    font-size: 3rem; } }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   body {
     padding: 2%; }
   .header {
@@ -176,4 +171,6 @@ body {
       margin-left: 3%; }
     .heading-primary--sub {
       font-size: 3.5vw;
-      letter-spacing: 0.85vw; } }
+      letter-spacing: 0.85vw; }
+  .heading-secondary {
+    font-size: 2rem; } }

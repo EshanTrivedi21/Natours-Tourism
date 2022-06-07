@@ -22,8 +22,8 @@ body{
         margin-left: 2%;
 
         &:hover{
-            transform: scale(1.01);
-            transition-duration: 0.5s;
+            transform: translateY(-10px);
+            transition-duration: 0.75s;
         }
     }
 
@@ -36,5 +36,23 @@ body{
         animation-duration: 1.5s;
         animation-timing-function: ease-out;
         backface-visibility: hidden;
+    }
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light), url(images/bgmain.jpg);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition-duration: 0.5s;
+
+    &:hover{
+        transform: translateY(-10px);
+        text-shadow: 0 1rem 2rem rgba(0,0,0,0.25);
     }
 }

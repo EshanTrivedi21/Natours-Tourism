@@ -53,6 +53,22 @@ body{
 
     &:hover{
         transform: translateY(-10px);
-        text-shadow: 0 1rem 2rem rgba(0,0,0,0.25);
+        text-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
     }
 }
+
+.heading-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+
+    &:not(:last-child){
+        margin-bottom: 5rem;
+    }
+}
+

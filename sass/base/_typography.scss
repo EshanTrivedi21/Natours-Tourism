@@ -42,9 +42,9 @@ body{
 .heading-secondary{
     font-size: 3.5rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light), url(images/bgmain.jpg);
+    background-image: linear-gradient(to right, $color-primary-d, $color-primary-l), url(images/bgmain.jpg);
     background-clip: border-box;
     -webkit-background-clip: text;
     color: transparent;
@@ -59,7 +59,7 @@ body{
 
 .heading-tertiary{
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -72,3 +72,16 @@ body{
     }
 }
 
+.heading-features{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-primary-white;
+    letter-spacing: 0.2rem;
+    transition-duration: 0.5s;
+
+    &:hover{
+        transform: translateY(-10px);
+        text-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    }
+}

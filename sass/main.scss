@@ -10,6 +10,7 @@
 @import "components/button";
 @import "components/composition";
 @import "components/feature-box";
+@import "components/cards";
 
 @import "layouts/header";
 @import "layouts/grid";
@@ -89,5 +90,9 @@
 
     .heading-secondary{
         font-size: 2rem;
+    }
+
+    .col-1-of-2{
+        all: none;
     }
   }

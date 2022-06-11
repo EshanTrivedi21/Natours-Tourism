@@ -1,22 +1,22 @@
 .section-about{
-    background-color: $color-gray-light-1;
-    padding: 17.5rem 0;
+    background-image: linear-gradient(to right, rgba($color-primary-d,0.05), rgba($color-primary-l,0.05));
+    padding: 15rem 0;
     margin-top: -10vh;
 }
 
 .section-features{
-    padding: 20rem 0;
-    padding-bottom: 25rem;
+    padding: 15rem 0;
+    padding-bottom: 15rem;
     margin-top: -10vh;
     background-image: linear-gradient(to right, $color-primary-d, $color-primary-l), url(images/bgmain.jpg);
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 7.5%, 100% 0, 100% 92.5%, 0 100%);
+    -webkit-clip-path: polygon(0 7.5%, 100% 0, 100% 92.5%, 0 100%);
 }
 
 .section-tours{
-    background-color: $color-gray-light-1;
+    background-image: linear-gradient(to right, rgba($color-primary-d,0.05), rgba($color-primary-l,0.05));
     padding: 15rem 0;
     margin-top: -12.5vh;
 }

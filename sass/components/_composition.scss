@@ -7,26 +7,26 @@
         border-radius: 2.5px;
         position: absolute;
         outline-offset: 0.5rem;
-        transition-duration: 0.25s;
+        transition-duration: 0.5s;
 
         &--p1{
-            left: 0%;
+            left: 5%;
             top: 0rem;
         }
 
         &--p2{
-            right: 0%;
-            top: 4rem;
+            right: -5%;
+            top: 5rem;
         }
 
         &--p3{
-            left: 20%;
+            left: 22.5%;
             top: 10rem;
         }
 
         &:hover{
             outline: 0.4rem solid $color-primary-light;
-            transform: scale(1.05);
+            transform: scale(1.1);
             box-shadow: 0 2.5rem 4rem rgba(0,0,0, 0.5);
             z-index: 20;
             transform: translateY(-3px);

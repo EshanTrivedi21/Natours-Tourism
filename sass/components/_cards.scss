@@ -1,4 +1,6 @@
 .card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
 
@@ -53,15 +55,15 @@
         border-top-right-radius: 3px;
 
         &--1{
-            background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark), url(../images/tours1.jpg);
+            background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark), url(./images/tours1.jpg);
         }
 
         &--2{
-            background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark), url(../images/tours2.jpg);
+            background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark), url(./images/tours2.jpg);
         }
 
         &--3{
-            background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark), url(../images/tours3.jpg);
+            background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark), url(./images/tours3.jpg);
         }
     }
 

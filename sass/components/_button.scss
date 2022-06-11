@@ -3,13 +3,13 @@
         font-size: 1.75rem;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.25rem 7.5rem;
         display: inline-block;
-        border-radius: 10rem;
         transition: all 0.2s;
     }
     
     &--white{
+        padding: 1rem 7rem;
+        border-radius: 5rem;
         background-color: $color-primary-white;
         color: rgb(50, 50, 50);
     }
@@ -26,27 +26,17 @@
     
 }
 
-.btn-text{
-    &:link, &:visited{
-        font-size: 2rem;
-        color: $color-primary-dark;
-        display: inline-block;
-        text-decoration: none;
-        padding: 0.5rem 2.5rem 0.5rem 1rem;
-    }
+.btn__text{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 4rem;
 
-    &:hover{
-        background-image:linear-gradient(to right, $color-primary-d, $color-primary-l);
+    &--red{
+        padding: 0.5rem 4rem 0.5rem 2rem;
+        border-radius: 0.5rem;
+        background-image:linear-gradient(to right, rgba($color-primary-d, 0.75), rgba($color-primary-l, 0.75));
         color: $color-primary-white;
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba(0,0,0,0.35);
-        border-bottom: 0;
-        transition-duration: 0.25s;
-    }
-
-    &:active{
-        transform: translateY(-1px);
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.45);
     }
 }
 
@@ -57,6 +47,8 @@
     margin-top: 5rem;
 
     &--red{
+        padding: 1.25rem 7.5rem;
+        border-radius: 5rem;
         background-image:linear-gradient(to right, $color-primary-d, $color-primary-l);
         color: $color-primary-white;
     }

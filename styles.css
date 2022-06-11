@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&family=Rubik&family=Sansita+Swashed:wght@500&family=Satisfy&display=swap");
 @keyframes moveinleft {
   0% {
     opacity: 0;
@@ -38,64 +39,69 @@ body {
   line-height: 1.7; }
 
 .heading-primary {
+  font-family: 'Rubik', sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 20%; }
+  margin-bottom: 25%; }
   .heading-primary--main {
     display: block;
     font-size: 6vw;
-    font-weight: 500;
-    letter-spacing: 2vw;
+    font-weight: 100;
+    letter-spacing: 2.25vw;
+    margin-left: 2.5%;
     animation-name: moveinleft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
-    backface-visibility: hidden;
-    margin-left: 2%; }
+    backface-visibility: hidden; }
     .heading-primary--main:hover {
       transform: translateY(-10px);
       transition-duration: 0.75s; }
   .heading-primary--sub {
     display: block;
     font-size: 2vw;
-    font-weight: 500;
-    letter-spacing: 0.4vw;
+    font-weight: 300;
+    letter-spacing: 0.5vw;
     animation-name: moveinright;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     backface-visibility: hidden; }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 4.25rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 300;
   display: inline-block;
   background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   transition-duration: 0.5s; }
   .heading-secondary:hover {
     transform: translateY(-10px);
     text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
+  letter-spacing: 0.25rem;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem;
-  margin-bottom: 3rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 5rem; }
+  font-size: 1.75rem;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.1rem; }
 
 .heading-features {
+  font-family: 'Rubik', sans-serif;
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-size: 4.25rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
   color: #ffffff;
-  letter-spacing: 0.2rem;
   transition-duration: 0.5s; }
   .heading-features:hover {
     transform: translateY(-10px);
@@ -108,21 +114,21 @@ body {
   margin-bottom: 8rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 5rem; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 2.5rem; }
 
 .btn:link, .btn:visited {
   font-size: 1.75rem;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.25rem 7.5rem;
   display: inline-block;
-  border-radius: 10rem;
   transition: all 0.2s; }
 
 .btn--white {
+  padding: 1rem 7rem;
+  border-radius: 5rem;
   background-color: #ffffff;
   color: #323232; }
 
@@ -134,24 +140,16 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45); }
 
-.btn-text:link, .btn-text:visited {
-  font-size: 2rem;
-  color: #ff0000f0;
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5rem 2.5rem 0.5rem 1rem; }
-
-.btn-text:hover {
-  background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0);
-  color: #ffffff;
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
-  border-bottom: 0;
-  transition-duration: 0.25s; }
-
-.btn-text:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45); }
+.btn__text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4rem; }
+  .btn__text--red {
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.75), rgba(255, 140, 0, 0.75));
+    color: #ffffff; }
 
 .btn__tours {
   position: absolute;
@@ -159,6 +157,8 @@ body {
   transform: translate(-50%, -50%);
   margin-top: 5rem; }
   .btn__tours--red {
+    padding: 1.25rem 7.5rem;
+    border-radius: 5rem;
     background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0);
     color: #ffffff; }
 
@@ -170,19 +170,19 @@ body {
     border-radius: 2.5px;
     position: absolute;
     outline-offset: 0.5rem;
-    transition-duration: 0.25s; }
+    transition-duration: 0.5s; }
     .composition__photo--p1 {
-      left: 0%;
+      left: 5%;
       top: 0rem; }
     .composition__photo--p2 {
-      right: 0%;
-      top: 4rem; }
+      right: -5%;
+      top: 5rem; }
     .composition__photo--p3 {
-      left: 20%;
+      left: 22.5%;
       top: 10rem; }
     .composition__photo:hover {
       outline: 0.4rem solid #ff8c00f0;
-      transform: scale(1.05);
+      transform: scale(1.1);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20;
       transform: translateY(-3px); }
@@ -202,7 +202,7 @@ body {
   .feature-box__icon {
     font-size: 5rem;
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
     display: inline-block;
     background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
     background-clip: border-box;
@@ -220,6 +220,8 @@ body {
     transform: scale(0.9); }
 
 .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
   position: relative;
   height: 50rem; }
   .card__side {
@@ -256,11 +258,11 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right, #ff8c00f0, #ff0000f0), url(../../images/tours1.jpg); }
+      background-image: linear-gradient(to right, #ff8c00f0, #ff0000f0), url(./images/tours1.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right, #7ed56f, #28b485), url(../../images/tours2.jpg); }
+      background-image: linear-gradient(to right, #7ed56f, #28b485), url(./images/tours2.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right, #2998fff0, #5643faf0), url(../../images/tours3.jpg); }
+      background-image: linear-gradient(to right, #2998fff0, #5643faf0), url(./images/tours3.jpg); }
   .card__heading {
     font-size: 3rem;
     font-weight: 500;
@@ -322,8 +324,8 @@ body {
   background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 87.5vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87.5vh, 0 100%);
   position: relative; }
   .header__logo-box {
     position: absolute;
@@ -342,7 +344,7 @@ body {
     text-align: center; }
 
 .row {
-  max-width: 115rem;
+  max-width: 125rem;
   color: #323232;
   margin: 0 auto; }
   .row:first-child {
@@ -365,22 +367,22 @@ body {
     width: calc((100% - 2 * 4rem) / 3); }
 
 .section-about {
-  background-color: #f7f7f7;
-  padding: 17.5rem 0;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.05), rgba(255, 140, 0, 0.05));
+  padding: 15rem 0;
   margin-top: -10vh; }
 
 .section-features {
-  padding: 20rem 0;
-  padding-bottom: 25rem;
+  padding: 15rem 0;
+  padding-bottom: 15rem;
   margin-top: -10vh;
   background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); }
+  clip-path: polygon(0 7.5%, 100% 0, 100% 92.5%, 0 100%);
+  -webkit-clip-path: polygon(0 7.5%, 100% 0, 100% 92.5%, 0 100%); }
 
 .section-tours {
-  background-color: #f7f7f7;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.05), rgba(255, 140, 0, 0.05));
   padding: 15rem 0;
   margin-top: -12.5vh; }
 

@@ -195,7 +195,6 @@ body {
   padding: 3rem;
   text-align: center;
   border-radius: 2.5px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition-duration: 0.25s;
   outline-offset: 0.25rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25); }
@@ -319,6 +318,66 @@ body {
     margin-top: 10rem;
     font-size: 1.75rem; }
 
+.story {
+  width: 75%;
+  margin: 0% auto;
+  margin-bottom: 5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffffa0;
+  border-radius: 3px;
+  padding: 5rem;
+  padding-left: 9rem;
+  transform: skew(-7.5deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skew(7.5deg);
+    position: relative; }
+  .story__img {
+    height: 15rem;
+    transform: scale(1.25);
+    backface-visibility: hidden; }
+  .story__text {
+    transform: skew(7.5deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.5s; }
+  .story:hover .story__img {
+    transform: scale(1);
+    transition-duration: 0.5s;
+    filter: blur(5px) brightness(60%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.25;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0), url(images/bgmain.jpg);
@@ -385,6 +444,10 @@ body {
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.05), rgba(255, 140, 0, 0.05));
   padding: 15rem 0;
   margin-top: -12.5vh; }
+
+.section-stories {
+  padding: 10rem 0;
+  position: relative; }
 
 @media only screen and (max-width: 1050px) {
   .header {

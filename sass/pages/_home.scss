@@ -8,7 +8,7 @@
     padding: 15rem 0;
     padding-bottom: 15rem;
     margin-top: -10vh;
-    background-image: linear-gradient(to right, $color-primary-d, $color-primary-l), url(images/bgmain.jpg);
+    background-image: linear-gradient(to right, $color-primary-d, $color-primary-l), url(./images/bgmain.jpg);
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 7.5%, 100% 0, 100% 92.5%, 0 100%);
@@ -24,4 +24,25 @@
 .section-stories{
     padding: 10rem 0;
     position: relative;
+}
+
+.section-book{
+    padding: 10rem 0;
+    background-image: linear-gradient(to right, rgba($color-primary-d, 0.85), rgba($color-primary-l, 0.85)), url(./images/bgmain.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.book{
+    background-image: linear-gradient(97.5deg, rgba($color-primary-white, 0.9) 0%, rgba($color-primary-white, 0.9) 50%, transparent 50%), url(./images/tours2.jpg);
+    background-size: 100%;
+    height: 60rem;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, 0.5);
+    object-fit: cover; 
+
+    &__form{
+        width: 50%;
+        padding: 6rem;
+    }
 }

@@ -1,0 +1,50 @@
+.form {
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.75rem;
+        color: inherit ;
+        padding: 1.1rem 2.2rem;
+        border-radius: 2px;
+        font-family: inherit;
+        background-color: rgba($color-primary-white , 0.75);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all 0.3s;
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-primary-black, 0.1);
+            border-bottom: 3px solid #77DD77;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid #FF6961;
+        }
+        
+        &::-webkit-input-placeholder {
+            color: $color-secondary-gray;
+        }
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        margin-left: 2.25rem;
+        margin-top: 0.5rem;
+        display: block;
+        transition: all 0.25s;
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    &__radio-input {
+    }
+}

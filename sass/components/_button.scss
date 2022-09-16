@@ -1,6 +1,6 @@
 .btn{
     &:link, &:visited {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
@@ -8,7 +8,7 @@
     }
     
     &--white{
-        padding: 1rem 7rem;
+        padding: 1.25rem 8.5rem;
         border-radius: 5rem;
         background-color: $color-primary-white;
         color: rgb(50, 50, 50);

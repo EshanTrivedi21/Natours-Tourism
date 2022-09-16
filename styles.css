@@ -120,14 +120,14 @@ body {
   margin-bottom: 2.5rem; }
 
 .btn:link, .btn:visited {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
   transition: all 0.2s; }
 
 .btn--white {
-  padding: 1rem 7rem;
+  padding: 1.25rem 8.5rem;
   border-radius: 5rem;
   background-color: #ffffff;
   color: #323232; }
@@ -381,10 +381,10 @@ body {
     object-fit: cover; }
 
 .form__group:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 2.5rem; }
 
 .form__input {
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   color: inherit;
   padding: 1.1rem 2.2rem;
   border-radius: 2px;
@@ -392,20 +392,20 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 100%;
   display: block;
   transition: all 0.3s; }
   .form__input:focus {
     outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #77DD77; }
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #6fe66f; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #FF6961; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
 
 .form__label {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   margin-left: 2.25rem;
   margin-top: 0.5rem;
   display: block;
@@ -415,6 +415,80 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem); }
+
+.form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  padding-left: 2rem; }
+
+.form__radio-group {
+  width: 150%; }
+
+.form__radio-label {
+  font-size: 1.9rem;
+  cursor: pointer;
+  padding-left: 4rem; }
+
+.form__radio-input {
+  display: none;
+  padding-left: 4rem; }
+
+.form__radio-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 5px solid #ff0000f0;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: -85%;
+  top: 0.5rem; }
+  .form__radio-button::after {
+    content: "";
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: #ff0000f0;
+    opacity: 0;
+    transition: opacity 0.25s; }
+
+.form__radio-input:checked ~ .form__radio-button::after {
+  opacity: 1; }
+
+.form__btn {
+  margin-top: 7.5%; }
+  .form__btn:link, .form__btn:visited {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s; }
+  .form__btn--white {
+    padding: 1rem 7rem;
+    border-radius: 5rem;
+    background-color: #ffffff;
+    color: #323232; }
+  .form__btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35); }
+  .form__btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45); }
+  .form__btn__tours {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5rem; }
+    .form__btn__tours--red {
+      padding: 1.25rem 7.5rem;
+      border-radius: 2rem;
+      background-image: linear-gradient(to right, #ff0000d0, #ff8c00d0);
+      color: #ffffff; }
 
 .header {
   height: 95vh;
@@ -462,6 +536,46 @@ body {
     width: calc((100% - 3 * 4rem) / 4); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 4rem) / 3); }
+
+.footer {
+  background-color: #333;
+  color: antiquewhite;
+  padding: 10rem 0;
+  font-size: 1.9rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 7.5rem; }
+  .footer__text {
+    font-size: 7.5rem;
+    margin-left: 2.5rem; }
+  .footer__navigation {
+    border-top: 2.5px solid #aaa;
+    padding-top: 2.5rem;
+    display: inline-block; }
+  .footer__copyright {
+    border-top: 2.5px solid #aaa;
+    padding-top: 2.5rem;
+    display: inline-block; }
+  .footer__list {
+    display: inline-block; }
+    .footer__list:not(:last-child) {
+      margin-right: 1rem; }
+  .footer__items {
+    padding: 0.5rem; }
+  .footer__link {
+    letter-spacing: 0.25rem; }
+    .footer__link:link, .footer__link:visited {
+      color: antiquewhite;
+      text-decoration: none;
+      transition: all 0.2s; }
+    .footer__link:hover, .footer__link:active {
+      color: #ff8c00f0;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.row__padding {
+  padding: 5rem; }
 
 .section-about {
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.05), rgba(255, 140, 0, 0.05));

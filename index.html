@@ -19,6 +19,30 @@
 
 <body>
 
+    <div class="navigation">
+
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <div class="navigation__nav">
+
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+            </ul>
+        
+        </div>
+
+    </div>
+
     <header class="header">
 
         <div class="header__logo-box">
@@ -118,7 +142,7 @@
 
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
 
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Most Popular Tours</h2>
@@ -158,7 +182,7 @@
                                         <p class="card__price-value">
                                             ₹ 12000
                                         </p>
-                                        <a href="#" class="card__btn btn btn--white">Book Now</a>
+                                        <a href="#popup" class="card__btn btn btn--white">Book Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +222,7 @@
                                         <p class="card__price-value">
                                             ₹ 20000
                                         </p>
-                                        <a href="#" class="card__btn btn btn--white">Book Now</a>
+                                        <a href="#popup" class="card__btn btn btn--white">Book Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +262,7 @@
                                         <p class="card__price-value">
                                             ₹ 25000
                                         </p>
-                                        <a href="#" class="card__btn btn btn--white">Book Now</a>
+                                        <a href="#popup" class="card__btn btn btn--white">Book Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +273,7 @@
                 </div>
                 
                 <div class="btn__tours">
-                    <a href="#" class="btn btn__tours--red">Discover More</a>
+                    <a href="#section-tours" class="btn btn__tours--red">Discover More</a>
                 </div>
 
         </section>
@@ -362,43 +386,101 @@
 
         </section>
 
-        <section class="footer">
-
-            <div class="footer__logo-box">
-                <img src="images/logomain.png" alt="Full logo" class=" footer__logo ">
-                <span class="footer__text heading-secondary">NATOURS </span>
-            </div>
-
-            <div class="row row__padding">
-
-                <div class="col-1-of-2">
-                    <div class="footer__navigation">
-                        <div class="footer__list">
-                            <ul>
-                            <li class="footer__items"><a href="#" class="footer__link">Company</li>
-                            <li class="footer__items"><a href="#" class="footer__link">Careers</li>
-                            <li class="footer__items"><a href="#" class="footer__link">Contact Us</li>
-                            <li class="footer__items"><a href="#" class="footer__link">Privacy Polivy</li>
-                            <li class="footer__items"><a href="#" class="footer__link">Terms</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-1-of-2">
-                    <div class="footer__copyright">
-                        <a href="#" class="footer__link">
-                        Made with ❤ by Eshan Kalp Trivedi 
-                        Copyright &copy; by Eshan Kalp Trivedi. You are 100% allowed to use this webpage for both personal
-                        and commercial use, but NOT to claim it as your own design. A credit to the original author, Eshan Trivedi, is of course highly appreciated!</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
     </main>
+
+    <div class="popup" id="popup">
+
+        <div class="popup__content">
+
+            <a href="#secion-tours" class="popup__close">&times;</a>
+
+            <div class="book">
+                <div class="book__form">
+                    <form action="#" class="form">
+
+                        <div class="u-center-text u-margin-bottom-medium">
+                            <h2 class="heading-secondary">Start Booking</h2>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="form__label">Full Name </label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Your Email" id="email" required>
+                            <label for="name" class="form__label">Email Adress </label>
+                        </div>
+
+                        <div class="form__group">
+
+                            <div class="form__container">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size" required>
+                                    <label for="small" class="form__radio-label">Small Group</label>
+                                    <span class="form__radio-button"></span>
+                                </div>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size" required>
+                                    <label for="large" class="form__radio-label">Large Group</label>
+                                    <span class="form__radio-button"></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form__group">
+
+                            <div class="form__button">
+                                <a href="#" class="form__btn form__btn__tours--red">Next Step</a>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer__logo-box">
+            <img src="images/logomain.png" alt="Full logo" class=" footer__logo ">
+            <span class="footer__text heading-secondary">NATOURS </span>
+        </div>
+
+        <div class="row row__padding">
+
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <div class="footer__list">
+                        <ul>
+                        <li class="footer__items"><a href="#" class="footer__link">Company</li>
+                        <li class="footer__items"><a href="#" class="footer__link">Careers</li>
+                        <li class="footer__items"><a href="#" class="footer__link">Contact Us</li>
+                        <li class="footer__items"><a href="#" class="footer__link">Privacy Polivy</li>
+                        <li class="footer__items"><a href="#" class="footer__link">Terms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1-of-2">
+                <div class="footer__copyright">
+                    <a href="#" class="footer__link">
+                    Made with ❤ by Eshan Kalp Trivedi 
+                    Copyright &copy; by Eshan Kalp Trivedi. You are 100% allowed to use this webpage for both personal
+                    and commercial use, but NOT to claim it as your own design. A credit to the original author, Eshan Trivedi, is of course highly appreciated!</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 
